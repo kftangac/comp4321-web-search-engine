@@ -1,0 +1,232 @@
+2021/05/02-11:44:14.723344 43a4 RocksDB version: 6.15.5
+2021/05/02-11:44:14.723461 43a4 Git sha rocksdb_build_git_sha:@abd4b1ff1504ae2a7ed6e60bc9c9797b880c33a5@
+2021/05/02-11:44:14.723497 43a4 Compile date Mar 13 2021
+2021/05/02-11:44:14.723527 43a4 DB SUMMARY
+2021/05/02-11:44:14.723550 43a4 DB Session ID:  QLVK1W50VC38K7NUG5RN
+2021/05/02-11:44:14.723876 43a4 CURRENT file:  CURRENT
+2021/05/02-11:44:14.723909 43a4 IDENTITY file:  IDENTITY
+2021/05/02-11:44:14.724002 43a4 MANIFEST file:  MANIFEST-000173 size: 62 Bytes
+2021/05/02-11:44:14.724033 43a4 SST files in ./pageid_to_url dir, Total Num: 0, files: 
+2021/05/02-11:44:14.724057 43a4 Write Ahead Log file in ./pageid_to_url: 000174.log size: 0 ; 
+2021/05/02-11:44:14.724085 43a4                         Options.error_if_exists: 0
+2021/05/02-11:44:14.724256 43a4                       Options.create_if_missing: 1
+2021/05/02-11:44:14.724272 43a4                         Options.paranoid_checks: 1
+2021/05/02-11:44:14.724281 43a4                               Options.track_and_verify_wals_in_manifest: 0
+2021/05/02-11:44:14.724290 43a4                                     Options.env: 0000026EF5DAC920
+2021/05/02-11:44:14.724300 43a4                                      Options.fs: Legacy File System
+2021/05/02-11:44:14.724309 43a4                                Options.info_log: 0000026EF6F59B80
+2021/05/02-11:44:14.724343 43a4                Options.max_file_opening_threads: 16
+2021/05/02-11:44:14.724359 43a4                              Options.statistics: 0000000000000000
+2021/05/02-11:44:14.724369 43a4                               Options.use_fsync: 0
+2021/05/02-11:44:14.724379 43a4                       Options.max_log_file_size: 0
+2021/05/02-11:44:14.724388 43a4                  Options.max_manifest_file_size: 1073741824
+2021/05/02-11:44:14.724398 43a4                   Options.log_file_time_to_roll: 0
+2021/05/02-11:44:14.724408 43a4                       Options.keep_log_file_num: 1000
+2021/05/02-11:44:14.724417 43a4                    Options.recycle_log_file_num: 0
+2021/05/02-11:44:14.724426 43a4                         Options.allow_fallocate: 1
+2021/05/02-11:44:14.724436 43a4                        Options.allow_mmap_reads: 0
+2021/05/02-11:44:14.724445 43a4                       Options.allow_mmap_writes: 0
+2021/05/02-11:44:14.724454 43a4                        Options.use_direct_reads: 0
+2021/05/02-11:44:14.724463 43a4                        Options.use_direct_io_for_flush_and_compaction: 0
+2021/05/02-11:44:14.724472 43a4          Options.create_missing_column_families: 0
+2021/05/02-11:44:14.724481 43a4                              Options.db_log_dir: 
+2021/05/02-11:44:14.724491 43a4                                 Options.wal_dir: ./pageid_to_url
+2021/05/02-11:44:14.724500 43a4                Options.table_cache_numshardbits: 6
+2021/05/02-11:44:14.724509 43a4                         Options.WAL_ttl_seconds: 0
+2021/05/02-11:44:14.724518 43a4                       Options.WAL_size_limit_MB: 0
+2021/05/02-11:44:14.724527 43a4                        Options.max_write_batch_group_size_bytes: 1048576
+2021/05/02-11:44:14.724537 43a4             Options.manifest_preallocation_size: 4194304
+2021/05/02-11:44:14.724547 43a4                     Options.is_fd_close_on_exec: 1
+2021/05/02-11:44:14.724556 43a4                   Options.advise_random_on_open: 1
+2021/05/02-11:44:14.724565 43a4                    Options.db_write_buffer_size: 0
+2021/05/02-11:44:14.724574 43a4                    Options.write_buffer_manager: 0000026EF6EF1330
+2021/05/02-11:44:14.724584 43a4         Options.access_hint_on_compaction_start: 1
+2021/05/02-11:44:14.724593 43a4  Options.new_table_reader_for_compaction_inputs: 0
+2021/05/02-11:44:14.724602 43a4           Options.random_access_max_buffer_size: 1048576
+2021/05/02-11:44:14.724611 43a4                      Options.use_adaptive_mutex: 0
+2021/05/02-11:44:14.724620 43a4                            Options.rate_limiter: 0000000000000000
+2021/05/02-11:44:14.724631 43a4     Options.sst_file_manager.rate_bytes_per_sec: 0
+2021/05/02-11:44:14.724640 43a4                       Options.wal_recovery_mode: 2
+2021/05/02-11:44:14.724691 43a4                  Options.enable_thread_tracking: 0
+2021/05/02-11:44:14.724706 43a4                  Options.enable_pipelined_write: 0
+2021/05/02-11:44:14.724715 43a4                  Options.unordered_write: 0
+2021/05/02-11:44:14.724724 43a4         Options.allow_concurrent_memtable_write: 1
+2021/05/02-11:44:14.724733 43a4      Options.enable_write_thread_adaptive_yield: 1
+2021/05/02-11:44:14.724743 43a4             Options.write_thread_max_yield_usec: 100
+2021/05/02-11:44:14.724752 43a4            Options.write_thread_slow_yield_usec: 3
+2021/05/02-11:44:14.724761 43a4                               Options.row_cache: None
+2021/05/02-11:44:14.724770 43a4                              Options.wal_filter: None
+2021/05/02-11:44:14.724780 43a4             Options.avoid_flush_during_recovery: 0
+2021/05/02-11:44:14.724789 43a4             Options.allow_ingest_behind: 0
+2021/05/02-11:44:14.724798 43a4             Options.preserve_deletes: 0
+2021/05/02-11:44:14.724807 43a4             Options.two_write_queues: 0
+2021/05/02-11:44:14.724816 43a4             Options.manual_wal_flush: 0
+2021/05/02-11:44:14.724824 43a4             Options.atomic_flush: 0
+2021/05/02-11:44:14.724834 43a4             Options.avoid_unnecessary_blocking_io: 0
+2021/05/02-11:44:14.724843 43a4                 Options.persist_stats_to_disk: 0
+2021/05/02-11:44:14.724852 43a4                 Options.write_dbid_to_manifest: 0
+2021/05/02-11:44:14.724861 43a4                 Options.log_readahead_size: 0
+2021/05/02-11:44:14.724870 43a4                 Options.file_checksum_gen_factory: Unknown
+2021/05/02-11:44:14.724879 43a4                 Options.best_efforts_recovery: 0
+2021/05/02-11:44:14.724888 43a4                Options.max_bgerror_resume_count: 2147483647
+2021/05/02-11:44:14.724898 43a4            Options.bgerror_resume_retry_interval: 1000000
+2021/05/02-11:44:14.724907 43a4             Options.allow_data_in_errors: 0
+2021/05/02-11:44:14.724916 43a4             Options.db_host_id: __hostname__
+2021/05/02-11:44:14.724925 43a4             Options.max_background_jobs: 2
+2021/05/02-11:44:14.724934 43a4             Options.max_background_compactions: -1
+2021/05/02-11:44:14.724943 43a4             Options.max_subcompactions: 1
+2021/05/02-11:44:14.724952 43a4             Options.avoid_flush_during_shutdown: 0
+2021/05/02-11:44:14.724961 43a4           Options.writable_file_max_buffer_size: 1048576
+2021/05/02-11:44:14.724970 43a4             Options.delayed_write_rate : 16777216
+2021/05/02-11:44:14.724979 43a4             Options.max_total_wal_size: 0
+2021/05/02-11:44:14.724988 43a4             Options.delete_obsolete_files_period_micros: 21600000000
+2021/05/02-11:44:14.724998 43a4                   Options.stats_dump_period_sec: 600
+2021/05/02-11:44:14.725007 43a4                 Options.stats_persist_period_sec: 600
+2021/05/02-11:44:14.725016 43a4                 Options.stats_history_buffer_size: 1048576
+2021/05/02-11:44:14.725025 43a4                          Options.max_open_files: -1
+2021/05/02-11:44:14.725035 43a4                          Options.bytes_per_sync: 0
+2021/05/02-11:44:14.725044 43a4                      Options.wal_bytes_per_sync: 0
+2021/05/02-11:44:14.725053 43a4                   Options.strict_bytes_per_sync: 0
+2021/05/02-11:44:14.725062 43a4       Options.compaction_readahead_size: 0
+2021/05/02-11:44:14.725070 43a4                  Options.max_background_flushes: -1
+2021/05/02-11:44:14.725080 43a4 Compression algorithms supported:
+2021/05/02-11:44:14.725089 43a4 	kZSTD supported: 1
+2021/05/02-11:44:14.725098 43a4 	kSnappyCompression supported: 1
+2021/05/02-11:44:14.725107 43a4 	kBZip2Compression supported: 0
+2021/05/02-11:44:14.725116 43a4 	kZlibCompression supported: 1
+2021/05/02-11:44:14.725125 43a4 	kLZ4Compression supported: 1
+2021/05/02-11:44:14.725134 43a4 	kXpressCompression supported: 0
+2021/05/02-11:44:14.725143 43a4 	kLZ4HCCompression supported: 1
+2021/05/02-11:44:14.725152 43a4 	kZSTDNotFinalCompression supported: 1
+2021/05/02-11:44:14.725164 43a4 Fast CRC32 supported: Supported on x86
+2021/05/02-11:44:14.726659 43a4 [db\version_set.cc:4725] Recovering from manifest file: ./pageid_to_url/MANIFEST-000173
+2021/05/02-11:44:14.726985 43a4 [db\column_family.cc:597] --------------- Options for column family [default]:
+2021/05/02-11:44:14.727006 43a4               Options.comparator: leveldb.BytewiseComparator
+2021/05/02-11:44:14.727017 43a4           Options.merge_operator: None
+2021/05/02-11:44:14.727026 43a4        Options.compaction_filter: None
+2021/05/02-11:44:14.727035 43a4        Options.compaction_filter_factory: None
+2021/05/02-11:44:14.727043 43a4  Options.sst_partitioner_factory: None
+2021/05/02-11:44:14.727052 43a4         Options.memtable_factory: SkipListFactory
+2021/05/02-11:44:14.727061 43a4            Options.table_factory: BlockBasedTable
+2021/05/02-11:44:14.727117 43a4            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000026EF68F4BB0)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 0000026EF6F58600
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 4
+  enable_index_compression: 1
+  block_align: 0
+2021/05/02-11:44:14.727129 43a4        Options.write_buffer_size: 67108864
+2021/05/02-11:44:14.727138 43a4  Options.max_write_buffer_number: 2
+2021/05/02-11:44:14.727147 43a4          Options.compression: Snappy
+2021/05/02-11:44:14.727156 43a4                  Options.bottommost_compression: Disabled
+2021/05/02-11:44:14.727165 43a4       Options.prefix_extractor: nullptr
+2021/05/02-11:44:14.727173 43a4   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2021/05/02-11:44:14.727182 43a4             Options.num_levels: 7
+2021/05/02-11:44:14.727191 43a4        Options.min_write_buffer_number_to_merge: 1
+2021/05/02-11:44:14.727199 43a4     Options.max_write_buffer_number_to_maintain: 0
+2021/05/02-11:44:14.727208 43a4     Options.max_write_buffer_size_to_maintain: 0
+2021/05/02-11:44:14.727217 43a4            Options.bottommost_compression_opts.window_bits: -14
+2021/05/02-11:44:14.727226 43a4                  Options.bottommost_compression_opts.level: 32767
+2021/05/02-11:44:14.727235 43a4               Options.bottommost_compression_opts.strategy: 0
+2021/05/02-11:44:14.727244 43a4         Options.bottommost_compression_opts.max_dict_bytes: 0
+2021/05/02-11:44:14.727253 43a4         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2021/05/02-11:44:14.727262 43a4         Options.bottommost_compression_opts.parallel_threads: 1
+2021/05/02-11:44:14.727270 43a4                  Options.bottommost_compression_opts.enabled: false
+2021/05/02-11:44:14.727279 43a4            Options.compression_opts.window_bits: -14
+2021/05/02-11:44:14.727288 43a4                  Options.compression_opts.level: 32767
+2021/05/02-11:44:14.727297 43a4               Options.compression_opts.strategy: 0
+2021/05/02-11:44:14.727305 43a4         Options.compression_opts.max_dict_bytes: 0
+2021/05/02-11:44:14.727314 43a4         Options.compression_opts.zstd_max_train_bytes: 0
+2021/05/02-11:44:14.727323 43a4         Options.compression_opts.parallel_threads: 1
+2021/05/02-11:44:14.727335 43a4                  Options.compression_opts.enabled: false
+2021/05/02-11:44:14.727344 43a4      Options.level0_file_num_compaction_trigger: 4
+2021/05/02-11:44:14.727353 43a4          Options.level0_slowdown_writes_trigger: 20
+2021/05/02-11:44:14.727366 43a4              Options.level0_stop_writes_trigger: 36
+2021/05/02-11:44:14.727377 43a4                   Options.target_file_size_base: 67108864
+2021/05/02-11:44:14.727387 43a4             Options.target_file_size_multiplier: 1
+2021/05/02-11:44:14.727395 43a4                Options.max_bytes_for_level_base: 268435456
+2021/05/02-11:44:14.727404 43a4 Options.level_compaction_dynamic_level_bytes: 0
+2021/05/02-11:44:14.727413 43a4          Options.max_bytes_for_level_multiplier: 10.000000
+2021/05/02-11:44:14.727423 43a4 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2021/05/02-11:44:14.727432 43a4 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2021/05/02-11:44:14.727441 43a4 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2021/05/02-11:44:14.727450 43a4 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2021/05/02-11:44:14.727459 43a4 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2021/05/02-11:44:14.727468 43a4 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2021/05/02-11:44:14.727476 43a4 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2021/05/02-11:44:14.727485 43a4       Options.max_sequential_skip_in_iterations: 8
+2021/05/02-11:44:14.727494 43a4                    Options.max_compaction_bytes: 1677721600
+2021/05/02-11:44:14.727503 43a4                        Options.arena_block_size: 8388608
+2021/05/02-11:44:14.727512 43a4   Options.soft_pending_compaction_bytes_limit: 68719476736
+2021/05/02-11:44:14.727521 43a4   Options.hard_pending_compaction_bytes_limit: 274877906944
+2021/05/02-11:44:14.727530 43a4       Options.rate_limit_delay_max_milliseconds: 100
+2021/05/02-11:44:14.727539 43a4                Options.disable_auto_compactions: 0
+2021/05/02-11:44:14.727558 43a4                        Options.compaction_style: kCompactionStyleLevel
+2021/05/02-11:44:14.727568 43a4                          Options.compaction_pri: kMinOverlappingRatio
+2021/05/02-11:44:14.727578 43a4 Options.compaction_options_universal.size_ratio: 1
+2021/05/02-11:44:14.727586 43a4 Options.compaction_options_universal.min_merge_width: 2
+2021/05/02-11:44:14.727595 43a4 Options.compaction_options_universal.max_merge_width: 4294967295
+2021/05/02-11:44:14.727604 43a4 Options.compaction_options_universal.max_size_amplification_percent: 200
+2021/05/02-11:44:14.727613 43a4 Options.compaction_options_universal.compression_size_percent: -1
+2021/05/02-11:44:14.727623 43a4 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2021/05/02-11:44:14.727631 43a4 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2021/05/02-11:44:14.727640 43a4 Options.compaction_options_fifo.allow_compaction: 0
+2021/05/02-11:44:14.727653 43a4                   Options.table_properties_collectors: 
+2021/05/02-11:44:14.727662 43a4                   Options.inplace_update_support: 0
+2021/05/02-11:44:14.727671 43a4                 Options.inplace_update_num_locks: 10000
+2021/05/02-11:44:14.727679 43a4               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2021/05/02-11:44:14.727689 43a4               Options.memtable_whole_key_filtering: 0
+2021/05/02-11:44:14.727697 43a4   Options.memtable_huge_page_size: 0
+2021/05/02-11:44:14.727706 43a4                           Options.bloom_locality: 0
+2021/05/02-11:44:14.727715 43a4                    Options.max_successive_merges: 0
+2021/05/02-11:44:14.727723 43a4                Options.optimize_filters_for_hits: 0
+2021/05/02-11:44:14.727732 43a4                Options.paranoid_file_checks: 0
+2021/05/02-11:44:14.727740 43a4                Options.force_consistency_checks: 1
+2021/05/02-11:44:14.727749 43a4                Options.report_bg_io_stats: 0
+2021/05/02-11:44:14.727758 43a4                               Options.ttl: 2592000
+2021/05/02-11:44:14.727767 43a4          Options.periodic_compaction_seconds: 0
+2021/05/02-11:44:14.727775 43a4                    Options.enable_blob_files: false
+2021/05/02-11:44:14.727784 43a4                        Options.min_blob_size: 0
+2021/05/02-11:44:14.727793 43a4                       Options.blob_file_size: 268435456
+2021/05/02-11:44:14.727854 43a4                Options.blob_compression_type: NoCompression
+2021/05/02-11:44:14.727867 43a4       Options.enable_blob_garbage_collection: false
+2021/05/02-11:44:14.727876 43a4   Options.blob_garbage_collection_age_cutoff: 0.250000
+2021/05/02-11:44:14.729189 43a4 [db\version_set.cc:4773] Recovered from manifest file:./pageid_to_url/MANIFEST-000173 succeeded,manifest_file_number is 173, next_file_number is 175, last_sequence is 0, log_number is 170,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+2021/05/02-11:44:14.729208 43a4 [db\version_set.cc:4782] Column family [default] (ID 0), log number is 170
+2021/05/02-11:44:14.729807 43a4 [db\version_set.cc:4083] Creating manifest 177
+2021/05/02-11:44:14.735423 43a4 EVENT_LOG_v1 {"time_micros": 1619927054735411, "job": 1, "event": "recovery_started", "wal_files": [174]}
+2021/05/02-11:44:14.735443 43a4 [db\db_impl\db_impl_open.cc:847] Recovering log #174 mode 2
+2021/05/02-11:44:14.735562 43a4 [db\version_set.cc:4083] Creating manifest 178
+2021/05/02-11:44:14.741471 43a4 EVENT_LOG_v1 {"time_micros": 1619927054741463, "job": 1, "event": "recovery_finished"}
+2021/05/02-11:44:14.742334 43a4 [file\delete_scheduler.cc:73] Deleted file ./pageid_to_url/000174.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/05/02-11:44:14.745737 43a4 [db\db_impl\db_impl_open.cc:1701] SstFileManager instance 0000026EF6EAEDB0
+2021/05/02-11:44:14.745854 43a4 DB pointer 0000026EF701F4A0

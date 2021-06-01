@@ -1,0 +1,601 @@
+02-May-2021 14:08:26.176 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 14:08:26.178 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 14:08:26.179 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3b5fad2d')
+02-May-2021 14:08:44.190 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [/lab4.jsp] at line [166]
+
+163:                 <div class="p-3 small border-bottom w-100">
+164:                     <%
+165:                         List<String> search_history = new ArrayList<>();
+166:                         search_history = (ArrayList<String>) session.getAttribute("name");
+167:                         for (int i = search_history.size() - 1; i >= 0; i--) {
+168:                     %>
+169:                     <form method="post" action="#">
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalStateException: getAttribute: Session already invalidated
+		at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1128)
+		at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:102)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:354)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-May-2021 14:41:00.879 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 14:41:00.879 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 14:41:04.576 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 14:41:04.576 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 14:41:04.577 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6531a794')
+02-May-2021 14:41:06.057 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [/lab4.jsp] at line [186]
+
+183:                 <div class="p-3 small border-bottom w-100">
+184:                     <%
+185:                         List<String> search_history = new ArrayList<>();
+186:                         search_history = (ArrayList<String>) session.getAttribute("name");
+187:                         for (int i = search_history.size() - 1; i >= 0; i--) {
+188:                     %>
+189:                     <form method="post" action="#">
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalStateException: getAttribute: Session already invalidated
+		at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1128)
+		at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:102)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:376)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-May-2021 15:26:50.031 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [/lab4.jsp] at line [186]
+
+183:                 <div class="p-3 small border-bottom w-100">
+184:                     <%
+185:                         List<String> search_history = new ArrayList<>();
+186:                         search_history = (ArrayList<String>) session.getAttribute("name");
+187:                         for (int i = search_history.size() - 1; i >= 0; i--) {
+188:                     %>
+189:                     <form method="post" action="#">
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalStateException: getAttribute: Session already invalidated
+		at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1128)
+		at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:102)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:376)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-May-2021 15:26:51.174 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [/lab4.jsp] at line [186]
+
+183:                 <div class="p-3 small border-bottom w-100">
+184:                     <%
+185:                         List<String> search_history = new ArrayList<>();
+186:                         search_history = (ArrayList<String>) session.getAttribute("name");
+187:                         for (int i = search_history.size() - 1; i >= 0; i--) {
+188:                     %>
+189:                     <form method="post" action="#">
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalStateException: getAttribute: Session already invalidated
+		at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1128)
+		at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:102)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:376)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-May-2021 15:26:52.004 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [/lab4.jsp] at line [186]
+
+183:                 <div class="p-3 small border-bottom w-100">
+184:                     <%
+185:                         List<String> search_history = new ArrayList<>();
+186:                         search_history = (ArrayList<String>) session.getAttribute("name");
+187:                         for (int i = search_history.size() - 1; i >= 0; i--) {
+188:                     %>
+189:                     <form method="post" action="#">
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalStateException: getAttribute: Session already invalidated
+		at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1128)
+		at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:102)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:376)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-May-2021 15:26:52.992 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [/lab4.jsp] at line [186]
+
+183:                 <div class="p-3 small border-bottom w-100">
+184:                     <%
+185:                         List<String> search_history = new ArrayList<>();
+186:                         search_history = (ArrayList<String>) session.getAttribute("name");
+187:                         for (int i = search_history.size() - 1; i >= 0; i--) {
+188:                     %>
+189:                     <form method="post" action="#">
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalStateException: getAttribute: Session already invalidated
+		at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1128)
+		at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:102)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:376)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-May-2021 15:26:56.442 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 15:26:56.443 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 15:27:00.455 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 15:27:00.455 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 15:27:00.456 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3b5fad2d')
+02-May-2021 15:27:00.843 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [lab4.jsp] at line [186]
+
+183:                 <div class="p-3 small border-bottom w-100">
+184:                     <%
+185:                         List<String> search_history = new ArrayList<>();
+186:                         search_history = (ArrayList<String>) session.getAttribute("name");
+187:                         for (int i = search_history.size() - 1; i >= 0; i--) {
+188:                     %>
+189:                     <form method="post" action="#">
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalStateException: getAttribute: Session already invalidated
+		at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1128)
+		at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:102)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:376)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-May-2021 15:27:02.413 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [lab4.jsp] at line [186]
+
+183:                 <div class="p-3 small border-bottom w-100">
+184:                     <%
+185:                         List<String> search_history = new ArrayList<>();
+186:                         search_history = (ArrayList<String>) session.getAttribute("name");
+187:                         for (int i = search_history.size() - 1; i >= 0; i--) {
+188:                     %>
+189:                     <form method="post" action="#">
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalStateException: getAttribute: Session already invalidated
+		at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1128)
+		at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:102)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:376)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-May-2021 15:27:03.477 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [lab4.jsp] at line [186]
+
+183:                 <div class="p-3 small border-bottom w-100">
+184:                     <%
+185:                         List<String> search_history = new ArrayList<>();
+186:                         search_history = (ArrayList<String>) session.getAttribute("name");
+187:                         for (int i = search_history.size() - 1; i >= 0; i--) {
+188:                     %>
+189:                     <form method="post" action="#">
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalStateException: getAttribute: Session already invalidated
+		at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1128)
+		at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:102)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:376)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-May-2021 15:27:04.258 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [lab4.jsp] at line [186]
+
+183:                 <div class="p-3 small border-bottom w-100">
+184:                     <%
+185:                         List<String> search_history = new ArrayList<>();
+186:                         search_history = (ArrayList<String>) session.getAttribute("name");
+187:                         for (int i = search_history.size() - 1; i >= 0; i--) {
+188:                     %>
+189:                     <form method="post" action="#">
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalStateException: getAttribute: Session already invalidated
+		at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1128)
+		at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:102)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:376)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-May-2021 15:27:05.227 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [lab4.jsp] at line [186]
+
+183:                 <div class="p-3 small border-bottom w-100">
+184:                     <%
+185:                         List<String> search_history = new ArrayList<>();
+186:                         search_history = (ArrayList<String>) session.getAttribute("name");
+187:                         for (int i = search_history.size() - 1; i >= 0; i--) {
+188:                     %>
+189:                     <form method="post" action="#">
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalStateException: getAttribute: Session already invalidated
+		at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1128)
+		at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:102)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:376)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+02-May-2021 16:26:15.338 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 16:26:15.339 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 16:26:38.823 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 16:26:38.823 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 16:26:38.824 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3b5fad2d')
+02-May-2021 17:20:40.129 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 17:20:40.129 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 17:33:24.570 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 17:33:24.570 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 17:33:24.571 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6531a794')
+02-May-2021 17:37:50.909 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 17:37:50.909 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 17:37:54.447 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 17:37:54.447 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 17:37:54.448 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6531a794')
+02-May-2021 17:52:11.063 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 17:52:11.063 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 17:52:11.202 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 17:52:11.202 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 17:52:11.203 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@57a3e26a')
+02-May-2021 17:52:14.498 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 17:52:14.498 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 17:52:14.499 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3b5fad2d')
+02-May-2021 17:52:14.692 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 17:52:14.692 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 17:52:23.471 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 17:52:23.471 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 17:52:26.998 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 17:52:26.998 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 17:52:27.004 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3b5fad2d')
+02-May-2021 21:17:15.409 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 21:17:15.409 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 21:17:23.602 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 21:17:23.602 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 21:17:23.604 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@3b5fad2d')
+02-May-2021 21:27:47.980 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 21:27:47.980 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 21:27:59.546 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 21:27:59.546 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 21:27:59.548 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6531a794')
+02-May-2021 21:32:45.712 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 21:32:45.712 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 21:32:49.051 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 21:32:49.051 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 21:32:49.053 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6531a794')
+02-May-2021 22:41:59.605 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 22:41:59.605 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 22:41:59.607 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6e33c391')
+02-May-2021 22:42:06.791 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [/lab4.jsp] at line [186]
+
+183:                 <div class="p-3 small border-bottom w-100">
+184:                     <%
+185:                         List<String> search_history = new ArrayList<>();
+186:                         search_history = (ArrayList<String>) session.getAttribute("name");
+187:                         for (int i = search_history.size() - 1; i >= 0; i--) {
+188:                     %>
+189:                     <form method="post" action="#">
+
+
+Stacktrace:] with root cause
+	java.lang.IllegalStateException: getAttribute: Session already invalidated
+		at org.apache.catalina.session.StandardSession.getAttribute(StandardSession.java:1128)
+		at org.apache.catalina.session.StandardSessionFacade.getAttribute(StandardSessionFacade.java:102)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:376)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:832)
+02-May-2021 22:59:05.241 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 22:59:05.241 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 22:59:14.775 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 22:59:14.775 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 22:59:14.778 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@6e33c391')
+02-May-2021 23:01:57.295 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 23:01:57.296 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+02-May-2021 23:02:45.176 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+02-May-2021 23:02:45.176 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+02-May-2021 23:02:45.178 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1e886a5b')
+02-May-2021 23:04:13.017 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+02-May-2021 23:04:13.017 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

@@ -1,0 +1,232 @@
+2021/04/23-18:06:54.698053 3d40 RocksDB version: 6.15.5
+2021/04/23-18:06:54.698165 3d40 Git sha rocksdb_build_git_sha:@abd4b1ff1504ae2a7ed6e60bc9c9797b880c33a5@
+2021/04/23-18:06:54.698202 3d40 Compile date Mar 13 2021
+2021/04/23-18:06:54.698231 3d40 DB SUMMARY
+2021/04/23-18:06:54.698253 3d40 DB Session ID:  4WKKXQKWYKXCZA4IJESD
+2021/04/23-18:06:54.698583 3d40 CURRENT file:  CURRENT
+2021/04/23-18:06:54.698615 3d40 IDENTITY file:  IDENTITY
+2021/04/23-18:06:54.698713 3d40 MANIFEST file:  MANIFEST-000143 size: 62 Bytes
+2021/04/23-18:06:54.698744 3d40 SST files in ./title_wordid_to_pos_db dir, Total Num: 0, files: 
+2021/04/23-18:06:54.698767 3d40 Write Ahead Log file in ./title_wordid_to_pos_db: 000144.log size: 0 ; 
+2021/04/23-18:06:54.698793 3d40                         Options.error_if_exists: 0
+2021/04/23-18:06:54.698987 3d40                       Options.create_if_missing: 1
+2021/04/23-18:06:54.699005 3d40                         Options.paranoid_checks: 1
+2021/04/23-18:06:54.699015 3d40                               Options.track_and_verify_wals_in_manifest: 0
+2021/04/23-18:06:54.699024 3d40                                     Options.env: 00000280FEB30B30
+2021/04/23-18:06:54.699034 3d40                                      Options.fs: Legacy File System
+2021/04/23-18:06:54.699043 3d40                                Options.info_log: 000002808016EC90
+2021/04/23-18:06:54.699052 3d40                Options.max_file_opening_threads: 16
+2021/04/23-18:06:54.699060 3d40                              Options.statistics: 0000000000000000
+2021/04/23-18:06:54.699069 3d40                               Options.use_fsync: 0
+2021/04/23-18:06:54.699078 3d40                       Options.max_log_file_size: 0
+2021/04/23-18:06:54.699087 3d40                  Options.max_manifest_file_size: 1073741824
+2021/04/23-18:06:54.699096 3d40                   Options.log_file_time_to_roll: 0
+2021/04/23-18:06:54.699104 3d40                       Options.keep_log_file_num: 1000
+2021/04/23-18:06:54.699113 3d40                    Options.recycle_log_file_num: 0
+2021/04/23-18:06:54.699121 3d40                         Options.allow_fallocate: 1
+2021/04/23-18:06:54.699130 3d40                        Options.allow_mmap_reads: 0
+2021/04/23-18:06:54.699138 3d40                       Options.allow_mmap_writes: 0
+2021/04/23-18:06:54.699147 3d40                        Options.use_direct_reads: 0
+2021/04/23-18:06:54.699155 3d40                        Options.use_direct_io_for_flush_and_compaction: 0
+2021/04/23-18:06:54.699164 3d40          Options.create_missing_column_families: 0
+2021/04/23-18:06:54.699172 3d40                              Options.db_log_dir: 
+2021/04/23-18:06:54.699181 3d40                                 Options.wal_dir: ./title_wordid_to_pos_db
+2021/04/23-18:06:54.699190 3d40                Options.table_cache_numshardbits: 6
+2021/04/23-18:06:54.699198 3d40                         Options.WAL_ttl_seconds: 0
+2021/04/23-18:06:54.699207 3d40                       Options.WAL_size_limit_MB: 0
+2021/04/23-18:06:54.699215 3d40                        Options.max_write_batch_group_size_bytes: 1048576
+2021/04/23-18:06:54.699224 3d40             Options.manifest_preallocation_size: 4194304
+2021/04/23-18:06:54.699233 3d40                     Options.is_fd_close_on_exec: 1
+2021/04/23-18:06:54.699242 3d40                   Options.advise_random_on_open: 1
+2021/04/23-18:06:54.699250 3d40                    Options.db_write_buffer_size: 0
+2021/04/23-18:06:54.699259 3d40                    Options.write_buffer_manager: 000002808007AF10
+2021/04/23-18:06:54.699267 3d40         Options.access_hint_on_compaction_start: 1
+2021/04/23-18:06:54.699278 3d40  Options.new_table_reader_for_compaction_inputs: 0
+2021/04/23-18:06:54.699287 3d40           Options.random_access_max_buffer_size: 1048576
+2021/04/23-18:06:54.699295 3d40                      Options.use_adaptive_mutex: 0
+2021/04/23-18:06:54.699304 3d40                            Options.rate_limiter: 0000000000000000
+2021/04/23-18:06:54.699313 3d40     Options.sst_file_manager.rate_bytes_per_sec: 0
+2021/04/23-18:06:54.699322 3d40                       Options.wal_recovery_mode: 2
+2021/04/23-18:06:54.699397 3d40                  Options.enable_thread_tracking: 0
+2021/04/23-18:06:54.699411 3d40                  Options.enable_pipelined_write: 0
+2021/04/23-18:06:54.699420 3d40                  Options.unordered_write: 0
+2021/04/23-18:06:54.699429 3d40         Options.allow_concurrent_memtable_write: 1
+2021/04/23-18:06:54.699437 3d40      Options.enable_write_thread_adaptive_yield: 1
+2021/04/23-18:06:54.699445 3d40             Options.write_thread_max_yield_usec: 100
+2021/04/23-18:06:54.699454 3d40            Options.write_thread_slow_yield_usec: 3
+2021/04/23-18:06:54.699463 3d40                               Options.row_cache: None
+2021/04/23-18:06:54.699471 3d40                              Options.wal_filter: None
+2021/04/23-18:06:54.699480 3d40             Options.avoid_flush_during_recovery: 0
+2021/04/23-18:06:54.699488 3d40             Options.allow_ingest_behind: 0
+2021/04/23-18:06:54.699497 3d40             Options.preserve_deletes: 0
+2021/04/23-18:06:54.699505 3d40             Options.two_write_queues: 0
+2021/04/23-18:06:54.699513 3d40             Options.manual_wal_flush: 0
+2021/04/23-18:06:54.699522 3d40             Options.atomic_flush: 0
+2021/04/23-18:06:54.699530 3d40             Options.avoid_unnecessary_blocking_io: 0
+2021/04/23-18:06:54.699538 3d40                 Options.persist_stats_to_disk: 0
+2021/04/23-18:06:54.699547 3d40                 Options.write_dbid_to_manifest: 0
+2021/04/23-18:06:54.699555 3d40                 Options.log_readahead_size: 0
+2021/04/23-18:06:54.699564 3d40                 Options.file_checksum_gen_factory: Unknown
+2021/04/23-18:06:54.699572 3d40                 Options.best_efforts_recovery: 0
+2021/04/23-18:06:54.699581 3d40                Options.max_bgerror_resume_count: 2147483647
+2021/04/23-18:06:54.699589 3d40            Options.bgerror_resume_retry_interval: 1000000
+2021/04/23-18:06:54.699598 3d40             Options.allow_data_in_errors: 0
+2021/04/23-18:06:54.699606 3d40             Options.db_host_id: __hostname__
+2021/04/23-18:06:54.699615 3d40             Options.max_background_jobs: 2
+2021/04/23-18:06:54.699623 3d40             Options.max_background_compactions: -1
+2021/04/23-18:06:54.699632 3d40             Options.max_subcompactions: 1
+2021/04/23-18:06:54.699640 3d40             Options.avoid_flush_during_shutdown: 0
+2021/04/23-18:06:54.699649 3d40           Options.writable_file_max_buffer_size: 1048576
+2021/04/23-18:06:54.699657 3d40             Options.delayed_write_rate : 16777216
+2021/04/23-18:06:54.699666 3d40             Options.max_total_wal_size: 0
+2021/04/23-18:06:54.699674 3d40             Options.delete_obsolete_files_period_micros: 21600000000
+2021/04/23-18:06:54.699683 3d40                   Options.stats_dump_period_sec: 600
+2021/04/23-18:06:54.699692 3d40                 Options.stats_persist_period_sec: 600
+2021/04/23-18:06:54.699700 3d40                 Options.stats_history_buffer_size: 1048576
+2021/04/23-18:06:54.699709 3d40                          Options.max_open_files: -1
+2021/04/23-18:06:54.699717 3d40                          Options.bytes_per_sync: 0
+2021/04/23-18:06:54.699726 3d40                      Options.wal_bytes_per_sync: 0
+2021/04/23-18:06:54.699734 3d40                   Options.strict_bytes_per_sync: 0
+2021/04/23-18:06:54.699743 3d40       Options.compaction_readahead_size: 0
+2021/04/23-18:06:54.699751 3d40                  Options.max_background_flushes: -1
+2021/04/23-18:06:54.699760 3d40 Compression algorithms supported:
+2021/04/23-18:06:54.699769 3d40 	kZSTD supported: 1
+2021/04/23-18:06:54.699778 3d40 	kSnappyCompression supported: 1
+2021/04/23-18:06:54.699786 3d40 	kBZip2Compression supported: 0
+2021/04/23-18:06:54.699795 3d40 	kZlibCompression supported: 1
+2021/04/23-18:06:54.699803 3d40 	kLZ4Compression supported: 1
+2021/04/23-18:06:54.699812 3d40 	kXpressCompression supported: 0
+2021/04/23-18:06:54.699820 3d40 	kLZ4HCCompression supported: 1
+2021/04/23-18:06:54.699828 3d40 	kZSTDNotFinalCompression supported: 1
+2021/04/23-18:06:54.699840 3d40 Fast CRC32 supported: Supported on x86
+2021/04/23-18:06:54.701413 3d40 [db\version_set.cc:4725] Recovering from manifest file: ./title_wordid_to_pos_db/MANIFEST-000143
+2021/04/23-18:06:54.701818 3d40 [db\column_family.cc:597] --------------- Options for column family [default]:
+2021/04/23-18:06:54.701838 3d40               Options.comparator: leveldb.BytewiseComparator
+2021/04/23-18:06:54.701848 3d40           Options.merge_operator: None
+2021/04/23-18:06:54.701857 3d40        Options.compaction_filter: None
+2021/04/23-18:06:54.701866 3d40        Options.compaction_filter_factory: None
+2021/04/23-18:06:54.701874 3d40  Options.sst_partitioner_factory: None
+2021/04/23-18:06:54.701882 3d40         Options.memtable_factory: SkipListFactory
+2021/04/23-18:06:54.701891 3d40            Options.table_factory: BlockBasedTable
+2021/04/23-18:06:54.701946 3d40            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (0000028080049EC0)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000002808004B380
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 4
+  enable_index_compression: 1
+  block_align: 0
+2021/04/23-18:06:54.701957 3d40        Options.write_buffer_size: 67108864
+2021/04/23-18:06:54.701966 3d40  Options.max_write_buffer_number: 2
+2021/04/23-18:06:54.701975 3d40          Options.compression: Snappy
+2021/04/23-18:06:54.701983 3d40                  Options.bottommost_compression: Disabled
+2021/04/23-18:06:54.701991 3d40       Options.prefix_extractor: nullptr
+2021/04/23-18:06:54.702000 3d40   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2021/04/23-18:06:54.702008 3d40             Options.num_levels: 7
+2021/04/23-18:06:54.702016 3d40        Options.min_write_buffer_number_to_merge: 1
+2021/04/23-18:06:54.702025 3d40     Options.max_write_buffer_number_to_maintain: 0
+2021/04/23-18:06:54.702033 3d40     Options.max_write_buffer_size_to_maintain: 0
+2021/04/23-18:06:54.702041 3d40            Options.bottommost_compression_opts.window_bits: -14
+2021/04/23-18:06:54.702050 3d40                  Options.bottommost_compression_opts.level: 32767
+2021/04/23-18:06:54.702059 3d40               Options.bottommost_compression_opts.strategy: 0
+2021/04/23-18:06:54.702067 3d40         Options.bottommost_compression_opts.max_dict_bytes: 0
+2021/04/23-18:06:54.702076 3d40         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2021/04/23-18:06:54.702085 3d40         Options.bottommost_compression_opts.parallel_threads: 1
+2021/04/23-18:06:54.702093 3d40                  Options.bottommost_compression_opts.enabled: false
+2021/04/23-18:06:54.702102 3d40            Options.compression_opts.window_bits: -14
+2021/04/23-18:06:54.702111 3d40                  Options.compression_opts.level: 32767
+2021/04/23-18:06:54.702119 3d40               Options.compression_opts.strategy: 0
+2021/04/23-18:06:54.702127 3d40         Options.compression_opts.max_dict_bytes: 0
+2021/04/23-18:06:54.702136 3d40         Options.compression_opts.zstd_max_train_bytes: 0
+2021/04/23-18:06:54.702144 3d40         Options.compression_opts.parallel_threads: 1
+2021/04/23-18:06:54.702153 3d40                  Options.compression_opts.enabled: false
+2021/04/23-18:06:54.702161 3d40      Options.level0_file_num_compaction_trigger: 4
+2021/04/23-18:06:54.702173 3d40          Options.level0_slowdown_writes_trigger: 20
+2021/04/23-18:06:54.702184 3d40              Options.level0_stop_writes_trigger: 36
+2021/04/23-18:06:54.702193 3d40                   Options.target_file_size_base: 67108864
+2021/04/23-18:06:54.702202 3d40             Options.target_file_size_multiplier: 1
+2021/04/23-18:06:54.702210 3d40                Options.max_bytes_for_level_base: 268435456
+2021/04/23-18:06:54.702219 3d40 Options.level_compaction_dynamic_level_bytes: 0
+2021/04/23-18:06:54.702227 3d40          Options.max_bytes_for_level_multiplier: 10.000000
+2021/04/23-18:06:54.702237 3d40 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2021/04/23-18:06:54.702246 3d40 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2021/04/23-18:06:54.702254 3d40 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2021/04/23-18:06:54.702263 3d40 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2021/04/23-18:06:54.702271 3d40 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2021/04/23-18:06:54.702282 3d40 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2021/04/23-18:06:54.702291 3d40 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2021/04/23-18:06:54.702299 3d40       Options.max_sequential_skip_in_iterations: 8
+2021/04/23-18:06:54.702308 3d40                    Options.max_compaction_bytes: 1677721600
+2021/04/23-18:06:54.702316 3d40                        Options.arena_block_size: 8388608
+2021/04/23-18:06:54.702325 3d40   Options.soft_pending_compaction_bytes_limit: 68719476736
+2021/04/23-18:06:54.702334 3d40   Options.hard_pending_compaction_bytes_limit: 274877906944
+2021/04/23-18:06:54.702342 3d40       Options.rate_limit_delay_max_milliseconds: 100
+2021/04/23-18:06:54.702351 3d40                Options.disable_auto_compactions: 0
+2021/04/23-18:06:54.702361 3d40                        Options.compaction_style: kCompactionStyleLevel
+2021/04/23-18:06:54.702378 3d40                          Options.compaction_pri: kMinOverlappingRatio
+2021/04/23-18:06:54.702387 3d40 Options.compaction_options_universal.size_ratio: 1
+2021/04/23-18:06:54.702396 3d40 Options.compaction_options_universal.min_merge_width: 2
+2021/04/23-18:06:54.702404 3d40 Options.compaction_options_universal.max_merge_width: 4294967295
+2021/04/23-18:06:54.702412 3d40 Options.compaction_options_universal.max_size_amplification_percent: 200
+2021/04/23-18:06:54.702421 3d40 Options.compaction_options_universal.compression_size_percent: -1
+2021/04/23-18:06:54.702430 3d40 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2021/04/23-18:06:54.702439 3d40 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2021/04/23-18:06:54.702447 3d40 Options.compaction_options_fifo.allow_compaction: 0
+2021/04/23-18:06:54.702459 3d40                   Options.table_properties_collectors: 
+2021/04/23-18:06:54.702468 3d40                   Options.inplace_update_support: 0
+2021/04/23-18:06:54.702477 3d40                 Options.inplace_update_num_locks: 10000
+2021/04/23-18:06:54.702485 3d40               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2021/04/23-18:06:54.702494 3d40               Options.memtable_whole_key_filtering: 0
+2021/04/23-18:06:54.702503 3d40   Options.memtable_huge_page_size: 0
+2021/04/23-18:06:54.702511 3d40                           Options.bloom_locality: 0
+2021/04/23-18:06:54.702519 3d40                    Options.max_successive_merges: 0
+2021/04/23-18:06:54.702540 3d40                Options.optimize_filters_for_hits: 0
+2021/04/23-18:06:54.702547 3d40                Options.paranoid_file_checks: 0
+2021/04/23-18:06:54.702554 3d40                Options.force_consistency_checks: 1
+2021/04/23-18:06:54.702560 3d40                Options.report_bg_io_stats: 0
+2021/04/23-18:06:54.702567 3d40                               Options.ttl: 2592000
+2021/04/23-18:06:54.702574 3d40          Options.periodic_compaction_seconds: 0
+2021/04/23-18:06:54.702580 3d40                    Options.enable_blob_files: false
+2021/04/23-18:06:54.702587 3d40                        Options.min_blob_size: 0
+2021/04/23-18:06:54.702639 3d40                       Options.blob_file_size: 268435456
+2021/04/23-18:06:54.702650 3d40                Options.blob_compression_type: NoCompression
+2021/04/23-18:06:54.702657 3d40       Options.enable_blob_garbage_collection: false
+2021/04/23-18:06:54.702664 3d40   Options.blob_garbage_collection_age_cutoff: 0.250000
+2021/04/23-18:06:54.703941 3d40 [db\version_set.cc:4773] Recovered from manifest file:./title_wordid_to_pos_db/MANIFEST-000143 succeeded,manifest_file_number is 143, next_file_number is 145, last_sequence is 0, log_number is 140,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+2021/04/23-18:06:54.703959 3d40 [db\version_set.cc:4782] Column family [default] (ID 0), log number is 140
+2021/04/23-18:06:54.704571 3d40 [db\version_set.cc:4083] Creating manifest 147
+2021/04/23-18:06:54.710396 3d40 EVENT_LOG_v1 {"time_micros": 1619172414710385, "job": 1, "event": "recovery_started", "wal_files": [144]}
+2021/04/23-18:06:54.710413 3d40 [db\db_impl\db_impl_open.cc:847] Recovering log #144 mode 2
+2021/04/23-18:06:54.710547 3d40 [db\version_set.cc:4083] Creating manifest 148
+2021/04/23-18:06:54.716114 3d40 EVENT_LOG_v1 {"time_micros": 1619172414716107, "job": 1, "event": "recovery_finished"}
+2021/04/23-18:06:54.716746 3d40 [file\delete_scheduler.cc:73] Deleted file ./title_wordid_to_pos_db/000144.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/04/23-18:06:54.720443 3d40 [db\db_impl\db_impl_open.cc:1701] SstFileManager instance 0000028080052EA0
+2021/04/23-18:06:54.720550 3d40 DB pointer 000002808015B8C0

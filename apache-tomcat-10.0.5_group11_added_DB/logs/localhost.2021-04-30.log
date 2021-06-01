@@ -1,0 +1,2235 @@
+30-Apr-2021 00:00:19.295 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:00:19.295 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:00:19.296 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291caca8')
+30-Apr-2021 00:00:19.605 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:00:19.605 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:02:16.179 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:02:16.179 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:02:32.287 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:02:32.287 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:02:32.288 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@385e9564')
+30-Apr-2021 00:03:58.448 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/subpage] threw exception [An exception occurred processing [lab4.jsp] at line [21]
+
+18: //	}
+19: RetrievalFunction rf = null;
+20: try {
+21: 	rf = new RetrievalFunction(s);
+22: } catch (RocksDBException e) {
+23: 	e.printStackTrace();
+24: }
+
+
+Stacktrace:] with root cause
+	java.lang.ArrayIndexOutOfBoundsException: 1
+		at Manage_Rocksdb.Manage_Rocksdb.RetrievalFunction.compute_term_weights(RetrievalFunction.java:112)
+		at Manage_Rocksdb.Manage_Rocksdb.RetrievalFunction.<init>(RetrievalFunction.java:64)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:142)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:10:20.560 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:10:20.560 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:10:20.562 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@385e9564')
+30-Apr-2021 00:10:27.653 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/subpage] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [48] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+An error occurred at line: [51] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+
+
+An error occurred at line: [53] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+
+
+An error occurred at line: [54] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+57: 							<h2 class="accordion-header" id="headingOne">
+
+
+An error occurred at line: [65] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+62: 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+63: 								<div class="accordion-body">
+64: 	
+65: 									<span class="d-block"><%=result.get(4) %></span>
+66: 								</div>
+67: 							</div>
+68: 						</div>
+
+
+An error occurred at line: [77] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+74: 							</h2>
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+
+
+An error occurred at line: [78] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+81: 						</div>
+
+
+An error occurred at line: [90] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+87: 							</h2>
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+
+
+An error occurred at line: [91] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+94: 						</div>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [48] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+An error occurred at line: [51] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+
+
+An error occurred at line: [53] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+
+
+An error occurred at line: [54] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+57: 							<h2 class="accordion-header" id="headingOne">
+
+
+An error occurred at line: [65] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+62: 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+63: 								<div class="accordion-body">
+64: 	
+65: 									<span class="d-block"><%=result.get(4) %></span>
+66: 								</div>
+67: 							</div>
+68: 						</div>
+
+
+An error occurred at line: [77] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+74: 							</h2>
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+
+
+An error occurred at line: [78] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+81: 						</div>
+
+
+An error occurred at line: [90] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+87: 							</h2>
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+
+
+An error occurred at line: [91] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+94: 						</div>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:481)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:11:41.029 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:11:41.029 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:11:44.572 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:11:44.572 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:11:44.573 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291caca8')
+30-Apr-2021 00:11:53.127 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/subpage] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [48] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+An error occurred at line: [51] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+
+
+An error occurred at line: [53] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+
+
+An error occurred at line: [54] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+57: 							<h2 class="accordion-header" id="headingOne">
+
+
+An error occurred at line: [65] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+62: 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+63: 								<div class="accordion-body">
+64: 	
+65: 									<span class="d-block"><%=result.get(4) %></span>
+66: 								</div>
+67: 							</div>
+68: 						</div>
+
+
+An error occurred at line: [77] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+74: 							</h2>
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+
+
+An error occurred at line: [78] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+81: 						</div>
+
+
+An error occurred at line: [90] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+87: 							</h2>
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+
+
+An error occurred at line: [91] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+94: 						</div>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [48] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+An error occurred at line: [51] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+
+
+An error occurred at line: [53] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+
+
+An error occurred at line: [54] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+57: 							<h2 class="accordion-header" id="headingOne">
+
+
+An error occurred at line: [65] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+62: 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+63: 								<div class="accordion-body">
+64: 	
+65: 									<span class="d-block"><%=result.get(4) %></span>
+66: 								</div>
+67: 							</div>
+68: 						</div>
+
+
+An error occurred at line: [77] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+74: 							</h2>
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+
+
+An error occurred at line: [78] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+81: 						</div>
+
+
+An error occurred at line: [90] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+87: 							</h2>
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+
+
+An error occurred at line: [91] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+94: 						</div>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:481)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:13:17.285 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:13:17.285 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:13:21.716 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:13:21.717 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:13:21.718 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@385e9564')
+30-Apr-2021 00:13:24.276 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:13:24.276 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:13:24.277 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@707194ba')
+30-Apr-2021 00:13:24.505 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:13:24.505 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:13:31.222 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/subpage] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [48] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+An error occurred at line: [51] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+
+
+An error occurred at line: [53] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+
+
+An error occurred at line: [54] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+57: 							<h2 class="accordion-header" id="headingOne">
+
+
+An error occurred at line: [65] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+62: 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+63: 								<div class="accordion-body">
+64: 	
+65: 									<span class="d-block"><%=result.get(4) %></span>
+66: 								</div>
+67: 							</div>
+68: 						</div>
+
+
+An error occurred at line: [77] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+74: 							</h2>
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+
+
+An error occurred at line: [78] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+81: 						</div>
+
+
+An error occurred at line: [90] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+87: 							</h2>
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+
+
+An error occurred at line: [91] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+94: 						</div>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [48] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+An error occurred at line: [51] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+
+
+An error occurred at line: [53] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+
+
+An error occurred at line: [54] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+57: 							<h2 class="accordion-header" id="headingOne">
+
+
+An error occurred at line: [65] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+62: 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+63: 								<div class="accordion-body">
+64: 	
+65: 									<span class="d-block"><%=result.get(4) %></span>
+66: 								</div>
+67: 							</div>
+68: 						</div>
+
+
+An error occurred at line: [77] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+74: 							</h2>
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+
+
+An error occurred at line: [78] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+81: 						</div>
+
+
+An error occurred at line: [90] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+87: 							</h2>
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+
+
+An error occurred at line: [91] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+94: 						</div>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:481)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:15:46.157 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:15:46.159 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:15:54.248 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:15:54.249 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:15:54.250 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@385e9564')
+30-Apr-2021 00:16:21.718 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/subpage] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [48] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+An error occurred at line: [51] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+
+
+An error occurred at line: [53] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+
+
+An error occurred at line: [54] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+57: 							<h2 class="accordion-header" id="headingOne">
+
+
+An error occurred at line: [65] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+62: 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+63: 								<div class="accordion-body">
+64: 	
+65: 									<span class="d-block"><%=result.get(4) %></span>
+66: 								</div>
+67: 							</div>
+68: 						</div>
+
+
+An error occurred at line: [77] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+74: 							</h2>
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+
+
+An error occurred at line: [78] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+81: 						</div>
+
+
+An error occurred at line: [90] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+87: 							</h2>
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+
+
+An error occurred at line: [91] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+94: 						</div>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [48] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+An error occurred at line: [51] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+
+
+An error occurred at line: [53] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+
+
+An error occurred at line: [54] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+57: 							<h2 class="accordion-header" id="headingOne">
+
+
+An error occurred at line: [65] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+62: 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+63: 								<div class="accordion-body">
+64: 	
+65: 									<span class="d-block"><%=result.get(4) %></span>
+66: 								</div>
+67: 							</div>
+68: 						</div>
+
+
+An error occurred at line: [77] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+74: 							</h2>
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+
+
+An error occurred at line: [78] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+81: 						</div>
+
+
+An error occurred at line: [90] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+87: 							</h2>
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+
+
+An error occurred at line: [91] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+94: 						</div>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:481)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:16:40.725 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [48] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+An error occurred at line: [51] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+
+
+An error occurred at line: [53] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+
+
+An error occurred at line: [54] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+57: 							<h2 class="accordion-header" id="headingOne">
+
+
+An error occurred at line: [65] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+62: 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+63: 								<div class="accordion-body">
+64: 	
+65: 									<span class="d-block"><%=result.get(4) %></span>
+66: 								</div>
+67: 							</div>
+68: 						</div>
+
+
+An error occurred at line: [77] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+74: 							</h2>
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+
+
+An error occurred at line: [78] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+81: 						</div>
+
+
+An error occurred at line: [90] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+87: 							</h2>
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+
+
+An error occurred at line: [91] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+94: 						</div>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [48] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+An error occurred at line: [51] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+
+
+An error occurred at line: [53] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+
+
+An error occurred at line: [54] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+57: 							<h2 class="accordion-header" id="headingOne">
+
+
+An error occurred at line: [65] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+62: 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+63: 								<div class="accordion-body">
+64: 	
+65: 									<span class="d-block"><%=result.get(4) %></span>
+66: 								</div>
+67: 							</div>
+68: 						</div>
+
+
+An error occurred at line: [77] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+74: 							</h2>
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+
+
+An error occurred at line: [78] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+81: 						</div>
+
+
+An error occurred at line: [90] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+87: 							</h2>
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+
+
+An error occurred at line: [91] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+94: 						</div>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:481)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:17:31.935 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:17:31.936 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:20:34.056 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:20:34.057 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:20:34.062 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291caca8')
+30-Apr-2021 00:20:51.181 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [48] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+An error occurred at line: [51] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+
+
+An error occurred at line: [53] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+
+
+An error occurred at line: [54] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+57: 							<h2 class="accordion-header" id="headingOne">
+
+
+An error occurred at line: [65] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+62: 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+63: 								<div class="accordion-body">
+64: 	
+65: 									<span class="d-block"><%=result.get(4) %></span>
+66: 								</div>
+67: 							</div>
+68: 						</div>
+
+
+An error occurred at line: [77] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+74: 							</h2>
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+
+
+An error occurred at line: [78] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+81: 						</div>
+
+
+An error occurred at line: [90] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+87: 							</h2>
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+
+
+An error occurred at line: [91] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+94: 						</div>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [19] in the jsp file: [/lab4.jsp]
+testException cannot be resolved to a type
+16: 	//	} catch (Exception e) {
+17: 	//		e.printStackTrace();
+18: 	//	}
+19: 	testException justfortest = new testException(s);
+20: 	String hi = justfortest.getPri();
+21: 	//////////////////////////
+22: 	//RetrievalFunction rf = null;
+
+
+An error occurred at line: [48] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+An error occurred at line: [51] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+
+
+An error occurred at line: [53] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+
+
+An error occurred at line: [54] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+51: 						<strong><%=result.get(1) %></strong>
+52: 					</div>
+53: 					<span class="d-block"><%=result.get(2) %></span>
+54: 					<span class="d-block"><%=result.get(3) %></span>
+55: 					<div class="accordion" id="accordionExample">
+56: 						<div class="accordion-item">
+57: 							<h2 class="accordion-header" id="headingOne">
+
+
+An error occurred at line: [65] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+62: 							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+63: 								<div class="accordion-body">
+64: 	
+65: 									<span class="d-block"><%=result.get(4) %></span>
+66: 								</div>
+67: 							</div>
+68: 						</div>
+
+
+An error occurred at line: [77] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+74: 							</h2>
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+
+
+An error occurred at line: [78] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+75: 							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+76: 								<div class="accordion-body">
+77: 									<span class="d-block"><%=result.get(5) %></span>
+78: 									<span class="d-block"><%=result.get(6) %></span>
+79: 								</div>
+80: 							</div>
+81: 						</div>
+
+
+An error occurred at line: [90] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+87: 							</h2>
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+
+
+An error occurred at line: [91] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+88: 							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+89: 								<div class="accordion-body">
+90: 									<span class="d-block"><%=result.get(7) %></span>
+91: 									<span class="d-block"><%=result.get(8) %></span>
+92: 								</div>
+93: 							</div>
+94: 						</div>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:481)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:21:55.413 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:21:55.413 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:22:00.543 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:22:00.543 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:22:00.544 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@385e9564')
+30-Apr-2021 00:22:10.300 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [/lab4.jsp] at line [48]
+
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+47: 			<div class="d-flex text-muted pt-3">
+48: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+49: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+50: 					<div class="d-flex justify-content-between">
+51: 						<strong><%=result.get(1) %></strong>
+
+
+Stacktrace:] with root cause
+	java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+		at java.util.ArrayList.rangeCheck(ArrayList.java:659)
+		at java.util.ArrayList.get(ArrayList.java:435)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:176)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:23:14.091 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:23:14.092 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:23:20.903 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:23:20.903 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:23:20.905 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291caca8')
+30-Apr-2021 00:25:30.531 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:25:30.531 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:26:00.354 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:26:00.355 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:26:00.356 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291caca8')
+30-Apr-2021 00:26:05.079 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [43] in the jsp file: [/lab4.jsp]
+hi cannot be resolved to a variable
+40: 	
+41: 	
+42: 	%>
+43: 	<%=hi%>
+44: 	<main class="container">
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [43] in the jsp file: [/lab4.jsp]
+hi cannot be resolved to a variable
+40: 	
+41: 	
+42: 	%>
+43: 	<%=hi%>
+44: 	<main class="container">
+45: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+46: 			<% for(int i = 0; i < 1; i++) { %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:481)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:26:47.455 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:26:47.455 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:26:53.457 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:26:53.457 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:26:53.462 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291caca8')
+30-Apr-2021 00:27:00.694 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [/lab4.jsp] at line [24]
+
+21: 	//////////////////////////
+22: 	RetrievalFunction rf = null;
+23: 	try {
+24: 		rf = new RetrievalFunction(s);
+25: 	} catch (RocksDBException e) {
+26: 		e.printStackTrace();
+27: 	}
+
+
+Stacktrace:] with root cause
+	java.lang.ArrayIndexOutOfBoundsException: 1
+		at Manage_Rocksdb.Manage_Rocksdb.RetrievalFunction.compute_term_weights(RetrievalFunction.java:112)
+		at Manage_Rocksdb.Manage_Rocksdb.RetrievalFunction.<init>(RetrievalFunction.java:64)
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:146)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:29:19.938 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:29:19.938 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:29:22.735 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:29:22.735 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:29:22.736 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291caca8')
+30-Apr-2021 00:29:30.903 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [29] in the jsp file: [/lab4.jsp]
+Type mismatch: cannot convert from Exception to String
+26: 	} catch (RocksDBException e) {
+27: 		e.printStackTrace();
+28: 	} catch (Exception ex) {
+29: 		hi = ex;
+30: 	}
+31: 	int test = rf.return_a();
+32: 	//assert rf != null;
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [29] in the jsp file: [/lab4.jsp]
+Type mismatch: cannot convert from Exception to String
+26: 	} catch (RocksDBException e) {
+27: 		e.printStackTrace();
+28: 	} catch (Exception ex) {
+29: 		hi = ex;
+30: 	}
+31: 	int test = rf.return_a();
+32: 	//assert rf != null;
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:481)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:30:30.239 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:30:30.239 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:30:33.783 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:30:33.783 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:30:33.784 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@385e9564')
+30-Apr-2021 00:30:41.254 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/lab4.jsp]
+The local variable hi may not have been initialized
+43: 	
+44: 	
+45: 	%>
+46: 	<%= hi %>
+47: 	<main class="container">
+48: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+49: 			<% for(int i = 0; i < 1; i++) { %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [46] in the jsp file: [/lab4.jsp]
+The local variable hi may not have been initialized
+43: 	
+44: 	
+45: 	%>
+46: 	<%= hi %>
+47: 	<main class="container">
+48: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+49: 			<% for(int i = 0; i < 1; i++) { %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:481)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:31:05.234 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:31:05.234 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:31:27.137 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:31:27.138 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:31:27.139 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@385e9564')
+30-Apr-2021 00:31:33.959 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [An exception occurred processing [/lab4.jsp] at line [31]
+
+28: 		} catch (Exception ex) {
+29: 			hi = ex.toString();
+30: 		}
+31: 		int test = rf.return_a();
+32: 		//assert rf != null;
+33: 		List<String> body_result = rf.get_body_retrieval_result();
+34: 		//
+
+
+Stacktrace:] with root cause
+	java.lang.NullPointerException
+		at org.apache.jsp.lab4_jsp._jspService(lab4_jsp.java:153)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:467)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 00:34:05.645 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:34:05.645 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:35:40.247 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:35:40.248 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:35:40.249 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@385e9564')
+30-Apr-2021 00:37:31.363 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:37:31.364 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:37:31.365 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1190200a')
+30-Apr-2021 00:37:31.712 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:37:31.712 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:38:31.960 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:38:31.960 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:38:31.962 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@1190200a')
+30-Apr-2021 00:38:32.248 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:38:32.248 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:55:02.058 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 00:55:02.058 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 00:55:05.939 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 00:55:05.939 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 00:55:05.941 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291caca8')
+30-Apr-2021 01:00:21.262 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 01:00:21.262 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 01:03:25.066 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 01:03:25.069 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 01:03:25.070 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@385e9564')
+30-Apr-2021 01:16:37.338 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 01:16:37.338 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 01:21:38.969 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 01:21:38.969 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 01:21:38.970 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@385e9564')
+30-Apr-2021 03:29:19.883 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 03:29:19.884 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 03:29:19.885 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@385e9564')
+30-Apr-2021 03:30:04.060 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 03:30:04.060 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 03:30:21.325 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 03:30:21.325 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 03:30:21.326 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291caca8')
+30-Apr-2021 03:30:42.920 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 03:30:42.920 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 03:31:03.993 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 03:31:03.994 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 03:31:03.995 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291caca8')
+30-Apr-2021 03:31:47.116 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 03:31:47.116 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 03:31:51.686 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 03:31:51.686 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 03:31:51.687 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291caca8')
+30-Apr-2021 03:31:58.940 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/example] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [33] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+30: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+31: 			<% for(int i = 0; i < retrieval_result.size(); i++) { %>
+32: 			<div class="d-flex text-muted pt-3">
+33: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+34: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+35: 					<div class="d-flex justify-content-between">
+36: 						<strong><%=retrieval_result.get(i) %></strong>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [33] in the jsp file: [/lab4.jsp]
+result cannot be resolved
+30: 		<div class="my-3 p-3 bg-body rounded shadow-sm">
+31: 			<% for(int i = 0; i < retrieval_result.size(); i++) { %>
+32: 			<div class="d-flex text-muted pt-3">
+33: 				<span class="badge bg-danger bd-placeholder-img flex-shrink-0 me-2 rounded"><%=result.get(0) %></span>
+34: 				<div class="p-3 mb-0 small lh-sm border-bottom w-100">
+35: 					<div class="d-flex justify-content-between">
+36: 						<strong><%=retrieval_result.get(i) %></strong>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:481)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:398)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:352)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:400)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:379)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:327)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:770)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:543)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:690)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:870)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1696)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.lang.Thread.run(Thread.java:748)
+30-Apr-2021 03:32:39.373 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 03:32:39.373 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 03:32:54.977 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 03:32:54.977 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 03:32:54.981 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@385e9564')
+30-Apr-2021 03:38:11.044 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+30-Apr-2021 03:38:11.045 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+30-Apr-2021 03:38:14.419 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+30-Apr-2021 03:38:14.419 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+30-Apr-2021 03:38:14.423 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@291caca8')

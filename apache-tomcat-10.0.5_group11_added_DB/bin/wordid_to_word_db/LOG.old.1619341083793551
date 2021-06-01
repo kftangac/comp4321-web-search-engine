@@ -1,0 +1,232 @@
+2021/04/25-16:55:03.015419 ed4 RocksDB version: 6.15.5
+2021/04/25-16:55:03.015533 ed4 Git sha rocksdb_build_git_sha:@abd4b1ff1504ae2a7ed6e60bc9c9797b880c33a5@
+2021/04/25-16:55:03.015571 ed4 Compile date Mar 13 2021
+2021/04/25-16:55:03.015600 ed4 DB SUMMARY
+2021/04/25-16:55:03.015622 ed4 DB Session ID:  PUIC08S8R567HE9IG316
+2021/04/25-16:55:03.016120 ed4 CURRENT file:  CURRENT
+2021/04/25-16:55:03.016154 ed4 IDENTITY file:  IDENTITY
+2021/04/25-16:55:03.016250 ed4 MANIFEST file:  MANIFEST-000618 size: 62 Bytes
+2021/04/25-16:55:03.016281 ed4 SST files in ./wordid_to_word_db dir, Total Num: 0, files: 
+2021/04/25-16:55:03.016303 ed4 Write Ahead Log file in ./wordid_to_word_db: 000619.log size: 0 ; 
+2021/04/25-16:55:03.016335 ed4                         Options.error_if_exists: 0
+2021/04/25-16:55:03.016541 ed4                       Options.create_if_missing: 1
+2021/04/25-16:55:03.016556 ed4                         Options.paranoid_checks: 1
+2021/04/25-16:55:03.016565 ed4                               Options.track_and_verify_wals_in_manifest: 0
+2021/04/25-16:55:03.016575 ed4                                     Options.env: 000001B67D676860
+2021/04/25-16:55:03.016584 ed4                                      Options.fs: Legacy File System
+2021/04/25-16:55:03.016593 ed4                                Options.info_log: 000001B67E75EC40
+2021/04/25-16:55:03.016602 ed4                Options.max_file_opening_threads: 16
+2021/04/25-16:55:03.016611 ed4                              Options.statistics: 0000000000000000
+2021/04/25-16:55:03.016620 ed4                               Options.use_fsync: 0
+2021/04/25-16:55:03.016628 ed4                       Options.max_log_file_size: 0
+2021/04/25-16:55:03.016637 ed4                  Options.max_manifest_file_size: 1073741824
+2021/04/25-16:55:03.016646 ed4                   Options.log_file_time_to_roll: 0
+2021/04/25-16:55:03.016655 ed4                       Options.keep_log_file_num: 1000
+2021/04/25-16:55:03.016664 ed4                    Options.recycle_log_file_num: 0
+2021/04/25-16:55:03.016672 ed4                         Options.allow_fallocate: 1
+2021/04/25-16:55:03.016681 ed4                        Options.allow_mmap_reads: 0
+2021/04/25-16:55:03.016689 ed4                       Options.allow_mmap_writes: 0
+2021/04/25-16:55:03.016698 ed4                        Options.use_direct_reads: 0
+2021/04/25-16:55:03.016706 ed4                        Options.use_direct_io_for_flush_and_compaction: 0
+2021/04/25-16:55:03.016715 ed4          Options.create_missing_column_families: 0
+2021/04/25-16:55:03.016724 ed4                              Options.db_log_dir: 
+2021/04/25-16:55:03.016732 ed4                                 Options.wal_dir: ./wordid_to_word_db
+2021/04/25-16:55:03.016741 ed4                Options.table_cache_numshardbits: 6
+2021/04/25-16:55:03.016749 ed4                         Options.WAL_ttl_seconds: 0
+2021/04/25-16:55:03.016758 ed4                       Options.WAL_size_limit_MB: 0
+2021/04/25-16:55:03.016767 ed4                        Options.max_write_batch_group_size_bytes: 1048576
+2021/04/25-16:55:03.016776 ed4             Options.manifest_preallocation_size: 4194304
+2021/04/25-16:55:03.016784 ed4                     Options.is_fd_close_on_exec: 1
+2021/04/25-16:55:03.016793 ed4                   Options.advise_random_on_open: 1
+2021/04/25-16:55:03.016801 ed4                    Options.db_write_buffer_size: 0
+2021/04/25-16:55:03.016810 ed4                    Options.write_buffer_manager: 000001B67E7B3430
+2021/04/25-16:55:03.016819 ed4         Options.access_hint_on_compaction_start: 1
+2021/04/25-16:55:03.016828 ed4  Options.new_table_reader_for_compaction_inputs: 0
+2021/04/25-16:55:03.016836 ed4           Options.random_access_max_buffer_size: 1048576
+2021/04/25-16:55:03.016845 ed4                      Options.use_adaptive_mutex: 0
+2021/04/25-16:55:03.016853 ed4                            Options.rate_limiter: 0000000000000000
+2021/04/25-16:55:03.016863 ed4     Options.sst_file_manager.rate_bytes_per_sec: 0
+2021/04/25-16:55:03.016871 ed4                       Options.wal_recovery_mode: 2
+2021/04/25-16:55:03.016936 ed4                  Options.enable_thread_tracking: 0
+2021/04/25-16:55:03.016950 ed4                  Options.enable_pipelined_write: 0
+2021/04/25-16:55:03.016959 ed4                  Options.unordered_write: 0
+2021/04/25-16:55:03.016968 ed4         Options.allow_concurrent_memtable_write: 1
+2021/04/25-16:55:03.016976 ed4      Options.enable_write_thread_adaptive_yield: 1
+2021/04/25-16:55:03.016985 ed4             Options.write_thread_max_yield_usec: 100
+2021/04/25-16:55:03.016994 ed4            Options.write_thread_slow_yield_usec: 3
+2021/04/25-16:55:03.017002 ed4                               Options.row_cache: None
+2021/04/25-16:55:03.017011 ed4                              Options.wal_filter: None
+2021/04/25-16:55:03.017020 ed4             Options.avoid_flush_during_recovery: 0
+2021/04/25-16:55:03.017028 ed4             Options.allow_ingest_behind: 0
+2021/04/25-16:55:03.017037 ed4             Options.preserve_deletes: 0
+2021/04/25-16:55:03.017045 ed4             Options.two_write_queues: 0
+2021/04/25-16:55:03.017053 ed4             Options.manual_wal_flush: 0
+2021/04/25-16:55:03.017062 ed4             Options.atomic_flush: 0
+2021/04/25-16:55:03.017070 ed4             Options.avoid_unnecessary_blocking_io: 0
+2021/04/25-16:55:03.017078 ed4                 Options.persist_stats_to_disk: 0
+2021/04/25-16:55:03.017087 ed4                 Options.write_dbid_to_manifest: 0
+2021/04/25-16:55:03.017095 ed4                 Options.log_readahead_size: 0
+2021/04/25-16:55:03.017104 ed4                 Options.file_checksum_gen_factory: Unknown
+2021/04/25-16:55:03.017113 ed4                 Options.best_efforts_recovery: 0
+2021/04/25-16:55:03.017121 ed4                Options.max_bgerror_resume_count: 2147483647
+2021/04/25-16:55:03.017130 ed4            Options.bgerror_resume_retry_interval: 1000000
+2021/04/25-16:55:03.017139 ed4             Options.allow_data_in_errors: 0
+2021/04/25-16:55:03.017147 ed4             Options.db_host_id: __hostname__
+2021/04/25-16:55:03.017156 ed4             Options.max_background_jobs: 2
+2021/04/25-16:55:03.017165 ed4             Options.max_background_compactions: -1
+2021/04/25-16:55:03.017174 ed4             Options.max_subcompactions: 1
+2021/04/25-16:55:03.017182 ed4             Options.avoid_flush_during_shutdown: 0
+2021/04/25-16:55:03.017191 ed4           Options.writable_file_max_buffer_size: 1048576
+2021/04/25-16:55:03.017199 ed4             Options.delayed_write_rate : 16777216
+2021/04/25-16:55:03.017208 ed4             Options.max_total_wal_size: 0
+2021/04/25-16:55:03.017216 ed4             Options.delete_obsolete_files_period_micros: 21600000000
+2021/04/25-16:55:03.017225 ed4                   Options.stats_dump_period_sec: 600
+2021/04/25-16:55:03.017234 ed4                 Options.stats_persist_period_sec: 600
+2021/04/25-16:55:03.017243 ed4                 Options.stats_history_buffer_size: 1048576
+2021/04/25-16:55:03.017251 ed4                          Options.max_open_files: -1
+2021/04/25-16:55:03.017260 ed4                          Options.bytes_per_sync: 0
+2021/04/25-16:55:03.017269 ed4                      Options.wal_bytes_per_sync: 0
+2021/04/25-16:55:03.017277 ed4                   Options.strict_bytes_per_sync: 0
+2021/04/25-16:55:03.017286 ed4       Options.compaction_readahead_size: 0
+2021/04/25-16:55:03.017294 ed4                  Options.max_background_flushes: -1
+2021/04/25-16:55:03.017303 ed4 Compression algorithms supported:
+2021/04/25-16:55:03.017312 ed4 	kZSTD supported: 1
+2021/04/25-16:55:03.017321 ed4 	kSnappyCompression supported: 1
+2021/04/25-16:55:03.017329 ed4 	kBZip2Compression supported: 0
+2021/04/25-16:55:03.017338 ed4 	kZlibCompression supported: 1
+2021/04/25-16:55:03.017346 ed4 	kLZ4Compression supported: 1
+2021/04/25-16:55:03.017355 ed4 	kXpressCompression supported: 0
+2021/04/25-16:55:03.017363 ed4 	kLZ4HCCompression supported: 1
+2021/04/25-16:55:03.017372 ed4 	kZSTDNotFinalCompression supported: 1
+2021/04/25-16:55:03.017383 ed4 Fast CRC32 supported: Supported on x86
+2021/04/25-16:55:03.018869 ed4 [db\version_set.cc:4725] Recovering from manifest file: ./wordid_to_word_db/MANIFEST-000618
+2021/04/25-16:55:03.019205 ed4 [db\column_family.cc:597] --------------- Options for column family [default]:
+2021/04/25-16:55:03.019224 ed4               Options.comparator: leveldb.BytewiseComparator
+2021/04/25-16:55:03.019232 ed4           Options.merge_operator: None
+2021/04/25-16:55:03.019239 ed4        Options.compaction_filter: None
+2021/04/25-16:55:03.019246 ed4        Options.compaction_filter_factory: None
+2021/04/25-16:55:03.019253 ed4  Options.sst_partitioner_factory: None
+2021/04/25-16:55:03.019260 ed4         Options.memtable_factory: SkipListFactory
+2021/04/25-16:55:03.019267 ed4            Options.table_factory: BlockBasedTable
+2021/04/25-16:55:03.019312 ed4            table_factory options:   flush_block_policy_factory: FlushBlockBySizePolicyFactory (000001B67E7645E0)
+  cache_index_and_filter_blocks: 0
+  cache_index_and_filter_blocks_with_high_priority: 1
+  pin_l0_filter_and_index_blocks_in_cache: 0
+  pin_top_level_index_and_filter: 1
+  index_type: 0
+  data_block_index_type: 0
+  index_shortening: 1
+  data_block_hash_table_util_ratio: 0.750000
+  hash_index_allow_collision: 1
+  checksum: 1
+  no_block_cache: 0
+  block_cache: 000001B67DFBBAD0
+  block_cache_name: LRUCache
+  block_cache_options:
+    capacity : 8388608
+    num_shard_bits : 4
+    strict_capacity_limit : 0
+    memory_allocator : None
+    high_pri_pool_ratio: 0.000
+  block_cache_compressed: 0000000000000000
+  persistent_cache: 0000000000000000
+  block_size: 4096
+  block_size_deviation: 10
+  block_restart_interval: 16
+  index_block_restart_interval: 1
+  metadata_block_size: 4096
+  partition_filters: 0
+  use_delta_encoding: 1
+  filter_policy: nullptr
+  whole_key_filtering: 1
+  verify_compression: 0
+  read_amp_bytes_per_bit: 0
+  format_version: 4
+  enable_index_compression: 1
+  block_align: 0
+2021/04/25-16:55:03.019321 ed4        Options.write_buffer_size: 67108864
+2021/04/25-16:55:03.019328 ed4  Options.max_write_buffer_number: 2
+2021/04/25-16:55:03.019335 ed4          Options.compression: Snappy
+2021/04/25-16:55:03.019342 ed4                  Options.bottommost_compression: Disabled
+2021/04/25-16:55:03.019349 ed4       Options.prefix_extractor: nullptr
+2021/04/25-16:55:03.019355 ed4   Options.memtable_insert_with_hint_prefix_extractor: nullptr
+2021/04/25-16:55:03.019362 ed4             Options.num_levels: 7
+2021/04/25-16:55:03.019369 ed4        Options.min_write_buffer_number_to_merge: 1
+2021/04/25-16:55:03.019375 ed4     Options.max_write_buffer_number_to_maintain: 0
+2021/04/25-16:55:03.019382 ed4     Options.max_write_buffer_size_to_maintain: 0
+2021/04/25-16:55:03.019389 ed4            Options.bottommost_compression_opts.window_bits: -14
+2021/04/25-16:55:03.019396 ed4                  Options.bottommost_compression_opts.level: 32767
+2021/04/25-16:55:03.019403 ed4               Options.bottommost_compression_opts.strategy: 0
+2021/04/25-16:55:03.019410 ed4         Options.bottommost_compression_opts.max_dict_bytes: 0
+2021/04/25-16:55:03.019417 ed4         Options.bottommost_compression_opts.zstd_max_train_bytes: 0
+2021/04/25-16:55:03.019424 ed4         Options.bottommost_compression_opts.parallel_threads: 1
+2021/04/25-16:55:03.019431 ed4                  Options.bottommost_compression_opts.enabled: false
+2021/04/25-16:55:03.019438 ed4            Options.compression_opts.window_bits: -14
+2021/04/25-16:55:03.019445 ed4                  Options.compression_opts.level: 32767
+2021/04/25-16:55:03.019452 ed4               Options.compression_opts.strategy: 0
+2021/04/25-16:55:03.019459 ed4         Options.compression_opts.max_dict_bytes: 0
+2021/04/25-16:55:03.019465 ed4         Options.compression_opts.zstd_max_train_bytes: 0
+2021/04/25-16:55:03.019472 ed4         Options.compression_opts.parallel_threads: 1
+2021/04/25-16:55:03.019479 ed4                  Options.compression_opts.enabled: false
+2021/04/25-16:55:03.019486 ed4      Options.level0_file_num_compaction_trigger: 4
+2021/04/25-16:55:03.019493 ed4          Options.level0_slowdown_writes_trigger: 20
+2021/04/25-16:55:03.019499 ed4              Options.level0_stop_writes_trigger: 36
+2021/04/25-16:55:03.019509 ed4                   Options.target_file_size_base: 67108864
+2021/04/25-16:55:03.019519 ed4             Options.target_file_size_multiplier: 1
+2021/04/25-16:55:03.019526 ed4                Options.max_bytes_for_level_base: 268435456
+2021/04/25-16:55:03.019533 ed4 Options.level_compaction_dynamic_level_bytes: 0
+2021/04/25-16:55:03.019540 ed4          Options.max_bytes_for_level_multiplier: 10.000000
+2021/04/25-16:55:03.019548 ed4 Options.max_bytes_for_level_multiplier_addtl[0]: 1
+2021/04/25-16:55:03.019555 ed4 Options.max_bytes_for_level_multiplier_addtl[1]: 1
+2021/04/25-16:55:03.019562 ed4 Options.max_bytes_for_level_multiplier_addtl[2]: 1
+2021/04/25-16:55:03.019569 ed4 Options.max_bytes_for_level_multiplier_addtl[3]: 1
+2021/04/25-16:55:03.019576 ed4 Options.max_bytes_for_level_multiplier_addtl[4]: 1
+2021/04/25-16:55:03.019583 ed4 Options.max_bytes_for_level_multiplier_addtl[5]: 1
+2021/04/25-16:55:03.019590 ed4 Options.max_bytes_for_level_multiplier_addtl[6]: 1
+2021/04/25-16:55:03.019596 ed4       Options.max_sequential_skip_in_iterations: 8
+2021/04/25-16:55:03.019603 ed4                    Options.max_compaction_bytes: 1677721600
+2021/04/25-16:55:03.019610 ed4                        Options.arena_block_size: 8388608
+2021/04/25-16:55:03.019617 ed4   Options.soft_pending_compaction_bytes_limit: 68719476736
+2021/04/25-16:55:03.019624 ed4   Options.hard_pending_compaction_bytes_limit: 274877906944
+2021/04/25-16:55:03.019631 ed4       Options.rate_limit_delay_max_milliseconds: 100
+2021/04/25-16:55:03.019638 ed4                Options.disable_auto_compactions: 0
+2021/04/25-16:55:03.019646 ed4                        Options.compaction_style: kCompactionStyleLevel
+2021/04/25-16:55:03.019654 ed4                          Options.compaction_pri: kMinOverlappingRatio
+2021/04/25-16:55:03.019661 ed4 Options.compaction_options_universal.size_ratio: 1
+2021/04/25-16:55:03.019668 ed4 Options.compaction_options_universal.min_merge_width: 2
+2021/04/25-16:55:03.019675 ed4 Options.compaction_options_universal.max_merge_width: 4294967295
+2021/04/25-16:55:03.019682 ed4 Options.compaction_options_universal.max_size_amplification_percent: 200
+2021/04/25-16:55:03.019689 ed4 Options.compaction_options_universal.compression_size_percent: -1
+2021/04/25-16:55:03.019696 ed4 Options.compaction_options_universal.stop_style: kCompactionStopStyleTotalSize
+2021/04/25-16:55:03.019703 ed4 Options.compaction_options_fifo.max_table_files_size: 1073741824
+2021/04/25-16:55:03.019710 ed4 Options.compaction_options_fifo.allow_compaction: 0
+2021/04/25-16:55:03.019720 ed4                   Options.table_properties_collectors: 
+2021/04/25-16:55:03.019727 ed4                   Options.inplace_update_support: 0
+2021/04/25-16:55:03.019734 ed4                 Options.inplace_update_num_locks: 10000
+2021/04/25-16:55:03.019741 ed4               Options.memtable_prefix_bloom_size_ratio: 0.000000
+2021/04/25-16:55:03.019748 ed4               Options.memtable_whole_key_filtering: 0
+2021/04/25-16:55:03.019755 ed4   Options.memtable_huge_page_size: 0
+2021/04/25-16:55:03.019762 ed4                           Options.bloom_locality: 0
+2021/04/25-16:55:03.019768 ed4                    Options.max_successive_merges: 0
+2021/04/25-16:55:03.019775 ed4                Options.optimize_filters_for_hits: 0
+2021/04/25-16:55:03.019782 ed4                Options.paranoid_file_checks: 0
+2021/04/25-16:55:03.019788 ed4                Options.force_consistency_checks: 1
+2021/04/25-16:55:03.019795 ed4                Options.report_bg_io_stats: 0
+2021/04/25-16:55:03.019802 ed4                               Options.ttl: 2592000
+2021/04/25-16:55:03.019809 ed4          Options.periodic_compaction_seconds: 0
+2021/04/25-16:55:03.019815 ed4                    Options.enable_blob_files: false
+2021/04/25-16:55:03.019822 ed4                        Options.min_blob_size: 0
+2021/04/25-16:55:03.019829 ed4                       Options.blob_file_size: 268435456
+2021/04/25-16:55:03.019836 ed4                Options.blob_compression_type: NoCompression
+2021/04/25-16:55:03.019879 ed4       Options.enable_blob_garbage_collection: false
+2021/04/25-16:55:03.019889 ed4   Options.blob_garbage_collection_age_cutoff: 0.250000
+2021/04/25-16:55:03.021073 ed4 [db\version_set.cc:4773] Recovered from manifest file:./wordid_to_word_db/MANIFEST-000618 succeeded,manifest_file_number is 618, next_file_number is 620, last_sequence is 0, log_number is 615,prev_log_number is 0,max_column_family is 0,min_log_number_to_keep is 0
+2021/04/25-16:55:03.021091 ed4 [db\version_set.cc:4782] Column family [default] (ID 0), log number is 615
+2021/04/25-16:55:03.021794 ed4 [db\version_set.cc:4083] Creating manifest 622
+2021/04/25-16:55:03.029105 ed4 EVENT_LOG_v1 {"time_micros": 1619340903029089, "job": 1, "event": "recovery_started", "wal_files": [619]}
+2021/04/25-16:55:03.029133 ed4 [db\db_impl\db_impl_open.cc:847] Recovering log #619 mode 2
+2021/04/25-16:55:03.029320 ed4 [db\version_set.cc:4083] Creating manifest 623
+2021/04/25-16:55:03.035935 ed4 EVENT_LOG_v1 {"time_micros": 1619340903035924, "job": 1, "event": "recovery_finished"}
+2021/04/25-16:55:03.037332 ed4 [file\delete_scheduler.cc:73] Deleted file ./wordid_to_word_db/000619.log immediately, rate_bytes_per_sec 0, total_trash_size 0 max_trash_db_ratio 0.250000
+2021/04/25-16:55:03.043242 ed4 [db\db_impl\db_impl_open.cc:1701] SstFileManager instance 000001B67E747CA0
+2021/04/25-16:55:03.043564 ed4 DB pointer 000001B67E78C060
